@@ -1,0 +1,154 @@
+/*Main website styling*/
+
+body {
+    background-color: #f4f6fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333333;
+}
+
+/*Header*/
+
+header {
+    background-color: #1f395e;
+    color: rgb(231, 217, 217);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/*Main content*/
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+    border-radius: 15px;
+}
+
+/*Sections*/
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+/*Headings*/
+
+h2 {
+    color: #183153;
+}
+
+/*Links*/
+
+a {
+    color: #114b7b;
+    text-decoration: none;
+}
+
+/*Buttons*/
+
+button {
+    background-color: #1769aa;
+    color: rgb(240, 232, 232);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #162d4e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-align: center;
+}
+
+/*Paragraph*/
+
+p {
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/*Learning Section*/
+
+.learning-section {
+    padding: 25px;
+}
+
+/*Card container using Grid*/
+
+.card-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+/*Individual cards*/
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid#dddddd;
+    text-align: center;
+}
+
+/*card headings*/
+
+.card h3 {
+    color: #1769aa;
+}
+
+/*Card paragraphs*/
+
+.card p {
+    color: #555555;
+}
+
+/*navigation bar*/
+
+.navigationBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    background-color: lightblue;
+}
+
+.myProfilesLink {
+    display: flex;
+    gap: 20px;
+}
+
+.navCard {
+    background-color: white;
+    padding: 5px;
+    border-radius: 3px;
+    border: .3px solid#dddddd;
+    text-align: center;
+}
+
+nav h2 {
+    color: solid#dddddd;
+}
