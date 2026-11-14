@@ -7,6 +7,42 @@ body {
     color: #333333;
 }
 
+/*navigation bar*/
+
+.navigationBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 25px;
+    background-color: lightblue;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.myProfilesLink {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.navCard {
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.navHead h2 {
+    color: #0e6865;
+}
+
+/*Image*/
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /*Header*/
 
 header {
@@ -19,7 +55,8 @@ header {
 /*Main content*/
 
 main {
-    max-width: 800px;
+    width: 90%;
+    max-width: 1000px;
     margin: 30px auto;
     padding: 0 20px;
     border-radius: 15px;
@@ -56,16 +93,6 @@ button {
     padding: 12px 24px;
     border-radius: 8px;
     cursor: pointer;
-}
-
-/*Footer*/
-
-footer {
-    background-color: #162d4e;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    text-align: center;
 }
 
 /*Paragraph*/
@@ -122,6 +149,38 @@ p {
     align-items: center;
 }
 
+/*know me*/
+
+.knowMe {
+    padding: 25px;
+}
+
+.know {
+    display: grid;
+
+    color: #ffffff;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+.knowBy {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid#efe9e9;
+    text-align: center;
+}
+
+.knowBy h3 {
+    color: #1769aa;
+}
+
+.knowBy p {
+    color: #555555;
+}
+
 /*Learning Section*/
 
 .learning-section {
@@ -133,7 +192,10 @@ p {
 .card-container {
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
 
     gap: 20px;
 }
@@ -159,27 +221,46 @@ p {
     color: #555555;
 }
 
-/*navigation bar*/
+/*Footer*/
 
-.navigationBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 25px;
-    background-color: lightblue;
-}
-
-.myProfilesLink {
-    display: flex;
-    gap: 20px;
-}
-
-.navCard {
-    padding: 5px;
-    border-radius: 3px;
+footer {
+    background-color: #162d4e;
+    color: white;
+    text-align: center;
+    padding: 20px;
     text-align: center;
 }
 
-.navHead h2 {
-    color: #0e6865;
+/*Tablet Layout*/
+
+@media (max-width: 900px) {
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*Mobile Layour*/
+
+@media (max-width: 600px) {
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    main {
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 18px;
+    }
 }
